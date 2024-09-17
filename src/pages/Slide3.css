@@ -1,33 +1,33 @@
 /* Container for the slide */
 .slide-container {
-    height: 70vh; /* Adjust height to fit within the viewport */
+    height: 70vh; /* Adjust height as necessary */
     display: flex;
     flex-direction: column; /* Stack image and content vertically */
-    justify-content: flex-start; /* Align the image and content towards the top */
-    align-items: center; /* Center the image horizontally */
+    align-items: center; /* Center items horizontally */
     background-color: #ffffff;
-    padding-top: 3vh; /* Adds space between the top and image */
+    padding-top: 3vh; /* Space between the top of the container and the image */
+    padding-bottom: 20px; /* Adds padding at the bottom */
 }
 
 /* Container for the image */
 .image-container {
-    width: 35%; /* Adjust the width of the image container */
+    width: 35%; /* Adjust as necessary */
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px; /* Space between image and content */
 }
 
 /* Style for the image */
 .image-container img {
-    max-width: 100%; /* Ensure the image doesn't exceed container width */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
+    height: auto;
     border: 2px solid black;
 }
 
 /* Container for the content */
 .content {
-    width: 80%; /* Adjust width to control the space for the content */
-    margin-top: 20px; /* Space between the image and content */
+    width: 80%; /* Adjust as necessary */
     text-align: left; /* Align content to the left */
     color: #333; /* Text color */
 }
@@ -43,12 +43,6 @@
     color: #2b2b2b;
 }
 
-.content h3 {
-    font-size: 1.2rem;
-    margin-top: 15px;
-    color: #4a4a4a;
-}
-
 .content p {
     font-size: 1rem;
     line-height: 1.5;
@@ -58,7 +52,7 @@
 .content ul {
     list-style-type: disc;
     padding-left: 20px;
-    text-align: left;
+    margin-bottom: 20px;
 }
 
 .content ul li {

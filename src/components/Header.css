@@ -8,26 +8,84 @@ body, html {
   height: 100%;
 }
 
+/* Header Section */
 .header {
-  height: 15vh; /* 30% of the viewport height */
+  height: 15vh;
   display: flex;
   align-items: center;
-  padding: 0 20px; /* Add padding for breathing space */
-  background-color: #f8f9fa; /* Light background color */
+  padding: 0 20px;
+  background-color: #f8f9fa;
 }
 
+/* Logo Section */
 .logo {
-  flex: 1; /* Let the logo take up necessary space */
+  flex: 1;
 }
 
 .logo-image {
-  height: 80%; /* Adjust the logo size as needed */
+  height: 80%; /* Adjust the logo size */
 }
 
+/* College Name Section */
 .college-name {
-  flex: 2; /* College name takes 2x space compared to logo */
+  flex: 2;
   font-size: 3rem;
   text-align: left;
-  padding-left: 20px; /* Space between logo and text */
-  color: #343a40; /* Dark color for the college name */
+  padding-left: 20px;
+  color: #343a40;
+}
+
+/* Responsive Design */
+
+/* For Tablets and Medium Screens */
+@media (max-width: 1024px) {
+  .header {
+    padding: 0 15px; /* Reduce padding on medium screens */
+  }
+
+  .college-name {
+    font-size: 2.5rem; /* Reduce font size for medium screens */
+    text-align: center; /* Center-align the text */
+    padding-left: 0; /* Remove left padding */
+  }
+}
+
+/* For Smaller Tablets and Large Mobiles */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    height: auto; /* Let height adjust automatically */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .logo {
+    margin-bottom: 10px; /* Add space between logo and college name */
+  }
+
+  .college-name {
+    font-size: 2rem; /* Further reduce font size */
+    text-align: center; /* Center-align the text */
+  }
+
+  .logo-image {
+    height: 60%; /* Reduce logo size */
+  }
+}
+
+/* For Mobile Devices */
+@media (max-width: 480px) {
+  .header {
+    padding: 5px;
+  }
+
+  .college-name {
+    font-size: 1.5rem; /* Further reduce font size */
+    text-align: center; /* Center-align the text */
+    padding-left: 0;
+  }
+
+  .logo-image {
+    height: 50%; /* Smaller logo size for mobile */
+  }
 }
