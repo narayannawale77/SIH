@@ -1,17 +1,13 @@
 import React from 'react';
-import './Header.css'; // Import the CSS file for styling
+import './Header.css'; // Importing the CSS file for styling
 
 const Header = () => {
   return (
     <header className="header">
-      <div className="logo-left">
-        <img src="/path/to/left-logo.png" alt="Left Logo" />
+      <div className="logo">
+        <img src="https://engg.dypvp.edu.in/images/logoDpu1.png" alt="College Logo" className="logo-image" />
       </div>
-      <div>Dr Dy Patil Institute Of Technology Pimpri, Pune</div>
-      <div>Bail Reckoner</div>
-      <div className="logo-right">
-        <img src="/path/to/right-logo.png" alt="Right Logo" />
-      </div>
+      <h1 className="college-name">Dr. D. Y. Patil Institute of Technology Pimpri, Pune.</h1>
     </header>
   );
 };

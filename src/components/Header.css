@@ -1,43 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
 .header {
-    font-size: 25px;
-    display: flex;
-    justify-content: space-between; /* Align items to the left and right */
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #f8f8f8; /* Background color of the header */
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .logo-left img,
-  .logo-right img {
-    height: 40px; /* Adjust the size of the logos as needed */
-  }
-  
-  .logo-left {
-    flex: 1;
-  }
-  
-  .logo-right {
-    flex: 1;
-    text-align: right; /* Align the right logo to the right */
-  }
-  
-  .header div {
-    text-align: center; /* Center the text */
-    flex: 2; /* Allocate more space for the central text */
-  }
-  
-  .header div:first-child {
-    text-align: left; /* Align the first div (left logo) to the left */
-  }
-  
-  .header div:nth-child(2) {
-    text-align: center; /* Center the second div (main text) */
-  }
-  
-  .header div:last-child {
-    text-align: right; /* Align the last div (right logo) to the right */
-  }
-  .clg{
-    margin-left: -100px;
-  }
+  height: 15vh; /* 30% of the viewport height */
+  display: flex;
+  align-items: center;
+  padding: 0 20px; /* Add padding for breathing space */
+  background-color: #f8f9fa; /* Light background color */
+}
+
+.logo {
+  flex: 1; /* Let the logo take up necessary space */
+}
+
+.logo-image {
+  height: 80%; /* Adjust the logo size as needed */
+}
+
+.college-name {
+  flex: 2; /* College name takes 2x space compared to logo */
+  font-size: 3rem;
+  text-align: left;
+  padding-left: 20px; /* Space between logo and text */
+  color: #343a40; /* Dark color for the college name */
+}
