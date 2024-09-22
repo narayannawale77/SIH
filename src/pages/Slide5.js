@@ -1,7 +1,7 @@
 
 import React from 'react';
 import './Slide1.css';
-import slide5 from '../assect/Slide6.PNG';
+import slide5 from '../assets/Slide6.PNG';
 
 function Slide5() {
     return (

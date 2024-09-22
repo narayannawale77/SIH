@@ -1,6 +1,6 @@
 import React from 'react';
 import './Slide3.css';
-import slide4 from '../assets/Slide5.PNG'; // Corrected path to assets
+import slide4 from '../assets/Slide5.PNG'; 
 
 const Slide3 = () => {
   return (

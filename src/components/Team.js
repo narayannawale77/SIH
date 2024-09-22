@@ -1,12 +1,13 @@
 import React from 'react';
-import './Team.css'; // Importing the CSS file for styling
+import './Team.css'; 
+import TeamLogo from '../assets/EquaTechInnovators.jpg';
 
 const Team = () => {
   return (
     <div className="team-container">
       {/* Left Side - Team Logo */}
       <div className="team-logo">
-        <img src="your_team_logo_url_here" alt="Team Logo" className="logo-image" />
+        <img src={TeamLogo} alt="Team Logo" className="logo-image1" />
       </div>
 
       {/* Right Side - Team Member Names */}
